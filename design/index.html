@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Hanken+Grotesk"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: Hanken Grotesk;
+        src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+      }
+
+      .attribution {
+        font-size: 30px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .section {
+        margin-top: 150px;
+        margin-bottom: 150px;
+      }
+
+      .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+
+      @media only screen and (min-width: 360px) and (max-width: 750px) {
+        .circle {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+        }
+
+        .number {
+          font-size: 40px;
+        }
+
+        .number2 {
+          font-size: 15px;
+        }
+      }
+
+      @media only screen and (min-width: 765px) and (max-width: 4000px) {
+.number{
+  font-size: 60px;
+}
+      }
+
+      .btn-hover {
+        /* margin-bottom: 36px; */
+      }
+
+      .btn-hover:hover {
+        background-image: linear-gradient(to bottom, #6b53e0, #342eea);
+      }
+
+      .break-point::before {
+        content: "\a";
+        white-space: pre;
+      }
+      body {
+        font-family: Hanken Grotesk;
+      }
+    </style>
+  </head>
+  <body>
+    Your Result 76 of 100 Great You scored higher than 65% of the people who
+    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
+    / 100 Visual 72 / 100 Continue
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ugbor Ebube</a>
+    </div>
+
+    <div class="section">
+      <div class="container-xl ">
+        <div class="row g-0 justify-content-center h-100 ">
+          <div class="col-sm-6 col-md-5 col-xl-4 h-auto ">
+            <div
+              class="card border-0 text-center rounded rounded-5 py-4 shadow-lg"
+              style="
+                background-image: linear-gradient(to bottom, #6b53e0, #342eea);
+              "
+            >
+              <div
+                class="card-title p-0 pt-lg-2 fs-3 fw-semibold"
+                style="color: hsl(241, 100%, 89%)"
+              >
+                Your Result
+              </div>
+              <div class="card-body my-0 my-lg-3">
+                <div
+                  class="justify-content-center m-auto circle mb-0 mb-lg-3  "
+                  style="
+                    background-image: linear-gradient(
+                      to bottom,
+                      #4d3ca0,
+                      #443fee
+                    );
+                  "
+                >
+                  <div class="pt-4 pt-lg-5">
+                    <h2 class="fw-bold display-6 text-white number">76</h2>
+                    <p style="color: hsl(241, 100%, 89%)" class="lead number2">
+                      of 100
+                    </p>
+                  </div>
+                </div>
+                <h5 class="card-title fs-2 fw-bold text-white py-3">Great</h5>
+                <p
+                  class="card-text d-block d-sm-block  d-md-block d-lg-none  lead fw-light mb-md-4 mb-lg-4 "
+                  style="font-size: 18px; color: hsl(241, 100%, 89%)"
+                >
+                  You Scored higher than 65&percnt; of <span class="break-point"></span>the
+                  
+                    people who have taken these tests.</span
+                  >
+                </p>
+                <!-- copy -->
+
+                  <p
+                  class="card-text d-none d-lg-block d-xl-none d-xxl-block lead fw-light"
+                  style="font-size: 18px; color: hsl(241, 100%, 89%)"
+                >
+                  You Scored higher than 65&percnt; of <br>the people who have taken <br>these tests.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-5 col-xl-4">
+            <div class="card border-0 rounded rounded-5 shadow-lg m-md-auto pb-md-2  pb-xl-3 ">
+              <div class="card-body">
+                <h5 class="card-title mt-3 mb-0 fs-3 fw-bold">Summary</h5>
+                <div class="grade pt-5 d-flex flex-column">
+                  <h1
+                    style="color: hsl(0, 100%, 67%); background-color: #fff6f5"
+                    class="card-text rounded py-3 fs-5 fw-semibold mb-4"
+                  >
+                    <img
+                      style="width: 40px"
+                      class="img-fluid px-2"
+                      src="assets/images/icon-reaction.svg"
+                      alt=""
+                    />Reaction<span
+                      style="color: hsl(241, 100%, 89%)"
+                      class="float-end fw-bold pe-3"
+                      ><span class="text-black">80 </span>/ 100</span
+                    >
+                  </h1>
+                  <p
+                    style="color: hsl(39, 100%, 56%); background-color: #fffbf2"
+                    class="card-text rounded py-3 fs-5 fw-semibold mb-4"
+                  >
+                    <img
+                      style="width: 40px"
+                      class="img-fluid px-2"
+                      src="assets/images/icon-memory.svg"
+                      alt=""
+                    />Memory<span
+                      style="color: hsl(241, 100%, 89%)"
+                      class="float-end fw-bold pe-3"
+                      ><span class="text-black">92 </span>/ 100</span
+                    >
+                  </p>
+                  <p
+                    style="
+                      color: hsl(166, 100%, 37%);
+                      background-color: #f2fbfa;
+                    "
+                    class="card-text rounded py-3 fs-5 fw-semibold mb-4"
+                  >
+                    <img
+                      style="width: 40px"
+                      class="img-fluid px-2"
+                      src="assets/images/icon-verbal.svg"
+                      alt=""
+                    />
+                    Verbal
+                    <span
+                      style="color: hsl(241, 100%, 89%)"
+                      class="float-end fw-bold pe-3"
+                      ><span class="text-black">61 </span>/ 100</span
+                    >
+                  </p>
+                  <p
+                    style="color: hsl(234, 85%, 45%); background-color: #f2f2f2"
+                    class="card-text rounded py-3 fs-5 fw-semibold mb-4"
+                  >
+                    <img
+                      style="width: 40px"
+                      class="img-fluid px-2"
+                      src="assets/images/icon-visual.svg"
+                      alt=""
+                    />Visual<span class="float-end fw-bold pe-3"
+                      ><span class="text-black">72 </span>/ 100</span
+                    >
+                  </p>
+                  <a
+                    style="background-color: #313d57"
+                    href="#"
+                    class="btn border border-1 rounded-pill py-md-3  py-xl-3  text-white lead fw-semibold btn-hover"
+                    >Continue</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
